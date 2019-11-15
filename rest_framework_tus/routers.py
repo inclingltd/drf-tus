@@ -12,6 +12,7 @@ def get_list_route():
             'get': 'list',
             'post': 'create'
         },
+        detail=False,
         name='{basename}-list',
         initkwargs={'suffix': 'List'}
     )
@@ -32,6 +33,7 @@ def get_detail_route():
             'delete': 'destroy',
             'head': 'info'
         },
+        detail=True,
         name='{basename}-detail',
         initkwargs={'suffix': 'Instance'}
     )
