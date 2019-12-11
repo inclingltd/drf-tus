@@ -57,8 +57,8 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        'Django>=1.8,<=1.12.0',
-        'djangorestframework>=3.5.4',
+        'Django>=1.8,<=2.3.0',
+        'djangorestframework>=3.8.0',
         'jsonfield>=2.0.0',
         'django-fsm==2.6.0',
         'six>=1.11.0',
@@ -73,6 +73,7 @@ setup(
         'Framework :: Django :: 1.9',
         'Framework :: Django :: 1.10',
         'Framework :: Django :: 1.11',
+        'Framework :: Django :: 2.2',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
