@@ -2,6 +2,10 @@
 
 History
 -------
+1.21.2 (2019-12-01)
++++++++++++++++++++
+
+* Updated compatibility for Django 2.2.7 and Django Rest Framework 3.8
 
 1.21.2 (2018-09-04)
 +++++++++++++++++++
