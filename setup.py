@@ -57,10 +57,10 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        'Django>=1.8,<=2.3.0',
+        'Django>=4.0.0',
         'djangorestframework>=3.8.0',
         'jsonfield>=2.0.0',
-        'django-fsm==2.6.0',
+        'django-fsm==2.8.0',
         'six>=1.11.0',
     ],
     license="MIT",
