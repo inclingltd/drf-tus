@@ -60,7 +60,7 @@ setup(
         'Django>=4.0.0',
         'djangorestframework>=3.8.0',
         'jsonfield>=2.0.0',
-        'django-fsm==2.8.0',
+        'django-fsm==2.8.1',
         'six>=1.11.0',
     ],
     license="MIT",
