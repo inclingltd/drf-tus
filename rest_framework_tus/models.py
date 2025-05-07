@@ -28,7 +28,7 @@ class AbstractUpload(models.Model):
     upload_offset = models.BigIntegerField(default=0)
     upload_length = models.BigIntegerField(default=-1)
 
-    upload_metadata = JSONField(load_kwargs={'object_pairs_hook': collections.OrderedDict})
+    upload_metadata = JSONField()
 
     filename = models.CharField(max_length=255, blank=True)
 
