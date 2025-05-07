@@ -10,7 +10,7 @@ from django.core.exceptions import ImproperlyConfigured, ValidationError
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django_fsm import FSMField, transition
-from jsonfield2 import JSONField
+from django.db.models import JSONField
 
 from rest_framework_tus import signals
 from rest_framework_tus import states

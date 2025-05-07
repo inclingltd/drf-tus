@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 from django.db import migrations, models
 import django_fsm
-import jsonfield2.fields
+from django.db.models import JSONField
 import uuid
 
 
@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
                 ('state', django_fsm.FSMField(default='initial', max_length=50)),
                 ('upload_offset', models.PositiveIntegerField(default=0)),
                 ('upload_length', models.IntegerField(default=-1)),
-                ('upload_metadata', jsonfield.fields.JSONField()),
+                ('upload_metadata', JSONField()),
                 ('filename', models.CharField(blank=True, max_length=255)),
                 ('temporary_file_path', models.CharField(max_length=4096, null=True)),
                 ('expires', models.DateTimeField(blank=True, null=True)),
