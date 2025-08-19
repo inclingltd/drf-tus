@@ -10,7 +10,7 @@ from django.core.exceptions import ImproperlyConfigured, ValidationError
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django_fsm import FSMField, transition
-from jsonfield import JSONField
+from django.db.models import JSONField
 
 from rest_framework_tus import signals
 from rest_framework_tus import states
@@ -28,7 +28,7 @@ class AbstractUpload(models.Model):
     upload_offset = models.BigIntegerField(default=0)
     upload_length = models.BigIntegerField(default=-1)
 
-    upload_metadata = JSONField(load_kwargs={'object_pairs_hook': collections.OrderedDict})
+    upload_metadata = JSONField()
 
     filename = models.CharField(max_length=255, blank=True)
 
